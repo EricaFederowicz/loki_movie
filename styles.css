@@ -1,0 +1,125 @@
+:root {
+    --fonte-principal: 'B612';
+    --cor-principal: #FFF;
+}
+
+body {
+    background-image: url("img/image.svg");
+    background-repeat: no-repeat;
+    background-size: 105%;
+    color: var(--cor-principal);
+    font-family: var(--fonte-principal);
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Cor escura com 50% de opacidade */
+    z-index: -1; /* Coloca o pseudo-elemento por trás do conteúdo */
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cabecalho__subtitulo {
+    font-size: 20px;
+    font-weight: 700;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cabecalho__titulo {
+    font-size: 96px;
+    font-weight: 700;
+}
+
+.corpo__principal {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 15em;
+}
+
+.corpo__principal__imagem {
+    padding-right: 5em;
+    display: block;
+}
+
+.corpo__principal__texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.texto {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+
+.complementos {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    border-top: 2em;
+}
+
+.relogio {
+    padding-right: 0.5em;
+}
+
+.estrelinhas {
+    padding-top: 1em;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    padding-top: 1em;
+}
+
+.botao__assistir__agora {
+    display: inline-flex;
+    padding: 15px 27px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 3px;
+    background: #0072D2;
+    border: 1px solid #0072D2;
+    color: var(--cor-principal);
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.botao__trailer {
+    display: inline-flex;
+    padding: 15px 27px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 3px;
+    background: #131318;
+    border: 1px solid #FFF;
+    color: var(--cor-principal);
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
