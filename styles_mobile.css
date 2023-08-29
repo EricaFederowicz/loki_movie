@@ -102,7 +102,7 @@
 
     .botao__trailer {
         padding: 10px 45px;
-        width: 45%;
+        align-items: center;
     }
 }
 
